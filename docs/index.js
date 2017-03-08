@@ -25,6 +25,7 @@ export default {
     {
       type: 'markdown',
       urlId: 'Getting-Started',
+      urlAliases: ['getting-started.md', 'gettingStarted.md', 'getting-started', 'gettingStarted'],
       category: 'General',
       title: 'Getting Started',
       description: 'Introduction & installation instructions',
@@ -33,6 +34,7 @@ export default {
     {
       type: 'markdown',
       urlId: 'Change-Log',
+      urlAliases: ['CHANGELOG.md', 'CHANGELOG', 'changelog'],
       category: 'General',
       title: 'Change Log',
       description: 'Changes for each version of the library',
@@ -41,6 +43,7 @@ export default {
     {
       type: 'markdown',
       urlId: 'Contributing',
+      urlAliases: ['CONTRIBUTING.md', 'CONTRIBUTING', 'contributing'],
       category: 'General',
       title: 'Contributing',
       description: 'Contribution manual',
@@ -49,6 +52,7 @@ export default {
     {
       type: 'markdown',
       urlId: 'I18n',
+      urlAliases: ['i18n.md', 'i18n'],
       category: 'General',
       title: 'I18n',
       description: 'Internationalization',
@@ -57,6 +61,7 @@ export default {
     {
       type: 'markdown',
       urlId: 'ECMAScript-Modules',
+      urlAliases: ['esm.md', 'esm'],
       category: 'General',
       title: 'ECMAScript Modules',
       description: 'Tree-shaking guide',
@@ -65,6 +70,7 @@ export default {
     {
       type: 'markdown',
       urlId: 'FP-Guide',
+      urlAliases: ['fp.md', 'fp'],
       category: 'General',
       title: 'FP Guide',
       description: 'Curried functions',
@@ -73,6 +79,7 @@ export default {
     {
       type: 'markdown',
       urlId: 'License',
+      urlAliases: ['LICENSE.md', 'LICENSE', 'license'],
       category: 'General',
       title: 'License',
       description: 'MIT © Sasha Koss',
