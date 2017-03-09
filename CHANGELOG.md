@@ -310,6 +310,21 @@ This change log follows the format documented in [Keep a CHANGELOG].
 - **BREAKING**: now `closestTo` and `closestIndexTo` don't throw an exception
   when the second argument is not an instance of array.
 
+- **BREAKING**: `partialMethod` option in `distanceInWordsStrict` is renamed to `roundingMethod`.
+
+  ```javascript
+  // Before v2.0.0
+  var options = {partialMethod: 'ceil'}
+  // v2.0.0 onward
+  var options = {roundingMethod: 'ceil'}
+
+  var result = distanceInWordsStrict(
+    new Date(1986, 3, 4, 10, 32, 0),
+    new Date(1986, 3, 4, 10, 33, 1),
+    options
+  )
+  ```
+
 - Every function now has `options` as the last argument which is passed to all its dependencies
   for consistency and future features.
   See [docs/Options.js](https://github.com/date-fns/date-fns/blob/master/docs/Options.js)
