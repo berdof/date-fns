@@ -254,4 +254,10 @@ describe('toDate', function () {
     var result = toDate('+12340702', {additionalDigits: '0'})
     assert.deepEqual(result, new Date(1234, 6 /* Jul */, 2))
   })
+
+  it.skip('returns `Invalid Date` if `options.additionalDigits is not 0, 1, 2, null or undefined`', function () {
+    // $ExpectedMistake
+    var result = toDate('+12340702', {additionalDigits: 3})
+    assert(result instanceof Date && isNaN(result))
+  })
 })
