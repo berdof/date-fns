@@ -88,4 +88,9 @@ describe('endOfWeek', function () {
     var result = endOfWeek(new Date(NaN))
     assert(result instanceof Date && isNaN(result))
   })
+
+  it.skip('returns `Invalid Date` if `options.weekStartsOn` is NaN', function () {
+    var result = endOfWeek(new Date(2014, 8 /* Sep */, 2, 11, 55, 0), {weekStartsOn: NaN})
+    assert(result instanceof Date && isNaN(result))
+  })
 })

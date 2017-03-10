@@ -105,4 +105,13 @@ describe('differenceInCalendarWeeks', function () {
     )
     assert(isNaN(result))
   })
+
+  it.skip('returns NaN if `options.weekStartsOn` is NaN', function () {
+    var result = differenceInCalendarWeeks(
+      new Date(2014, 6 /* Jul */, 8, 18, 0),
+      new Date(2014, 5 /* Jun */, 29, 6, 0),
+      {weekStartsOn: NaN}
+    )
+    assert(isNaN(result))
+  })
 })

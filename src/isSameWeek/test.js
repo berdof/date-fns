@@ -71,4 +71,13 @@ describe('isSameWeek', function () {
     )
     assert(result === false)
   })
+
+  it.skip('returns false if `options.weekStartsOn` is NaN', function () {
+    var result = isSameWeek(
+      new Date(2014, 7 /* Aug */, 31),
+      new Date(2014, 8 /* Sep */, 4),
+      {weekStartsOn: NaN}
+    )
+    assert(result === false)
+  })
 })

@@ -795,5 +795,12 @@ describe('parse', function () {
       var result = parse(dateString, formatString, new Date(NaN))
       assert(result instanceof Date && isNaN(result))
     })
+
+    it.skip('returns `Invalid Date` if `options.weekStartsOn` is NaN', function () {
+      var dateString = '2014-07-02T05:30:15.123+06:00'
+      var formatString = 'YYYY-MM-DDTHH:mm:ss.SSSZ'
+      var result = parse(dateString, formatString, baseDate, {weekStartsOn: NaN})
+      assert(result instanceof Date && isNaN(result))
+    })
   })
 })
